@@ -1,0 +1,15 @@
+#!/bin/bash -x
+
+ispresent=1
+randomCheck=$((RANDOM%2))
+
+if [ $ispresent -eq $randomCheck ]
+
+then
+   employaverage=20
+   emphrs=8
+   echo salary=$(($employaverage*$emphrs))
+
+else
+   echo salary=0
+fi
