@@ -1,0 +1,19 @@
+#!/bin/bash -x
+
+isfulltime=1
+ispartime=2
+empavg=20
+randomCheck=$((RANDOM%3))
+
+case $randomCheck in 
+                        $isfulltime)
+                          emphrs=8
+                             ;;
+                         $ispartime)
+                          emphrs=4
+                             ;;
+                     *)
+                         emphrs=0
+                             ;;
+esac
+salary=$(($empavg*$emphrs))
